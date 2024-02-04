@@ -1,0 +1,141 @@
+/*
+Initial setup
+*/
+*,
+:before,
+:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#app {
+  margin: 30px auto;
+  width: 1000px;
+}
+
+/*
+Header Navigation 
+*/
+
+#header-container {
+  margin-bottom: 15px;
+}
+
+.column_nav_section,
+.row_nav_section {
+  display: flex;
+  flex-direction: row;
+}
+
+.column_nav_section {
+  justify-content: flex-end;
+}
+
+.row_nav_section {
+  justify-content: space-between;
+}
+
+.nav-el {
+  margin: 10px;
+}
+
+.nav-el img {
+  margin-left: 5px;
+}
+
+.nav-el a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+
+/*
+Homepage and sliders setup
+*/
+
+#homepage_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#slider-container {
+  background-color: rgb(231, 240, 246);
+  border-radius: 30px;
+  padding: 20px;
+  text-align: left;
+  width: 100%;
+}
+
+#slider_menu {
+  margin-bottom: 30px;
+  margin-left: 20px;
+  width: 40%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#slider_menu a {
+  text-decoration: none;
+  color: black;
+  margin-right: 15px;
+  padding-bottom: 5px;
+  border-bottom: 2px solid black;
+  font-size: 20px;
+}
+
+.slider-image {
+  float: right;
+  width: 50%;
+}
+
+#slide0 {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+
+.pre-title,
+.sub-title {
+  margin: 0 5px 35px 10px;
+  text-align: left;
+}
+
+.pre-title {
+  font-size: 23px;
+  font-weight: lighter;
+}
+
+.title {
+  margin: 0 5px 15px 10px;
+  font-size: 40px;
+  font-weight: bolder;
+  text-align: left;
+}
+
+.sub-title {
+  font-size: 35px;
+  font-weight: 100;
+}
+
+.action-button-container {
+  display: flex;
+}
+
+.action-button {
+  background-color: rgb(72, 157, 206);
+  border: 3px solid black;
+  border-radius: 30px;
+  color: white;
+  padding: 5px 15px 5px 15px;
+  font-size: 25px;
+  margin-left: 10px;
+}
+
+.action-button-container img {
+  height: 50px;
+  margin-left: 20px;
+}
