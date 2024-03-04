@@ -9,7 +9,7 @@ const Slide0 = () => {
 
       <div className="action-button-container">
         <button className="action-button">Try Now</button>
-        <img src={require('../../static/arrow_right.png')} alt="Arrow Right" />
+        <img className="action-button-arrow" src={require('../../static/arrow_right.png')} alt="Arrow Right" />
       </div>
     </div>
   )

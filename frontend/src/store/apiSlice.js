@@ -1,0 +1,15 @@
+import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
+
+export const apiSlice = createApi({
+  reducerPath: 'api',
+  baseQuery: fetchBaseQuery({ baseUrl: 'http://127.0.0.1:3458/api' }),
+  tagTypes: ['Weather'],
+  endpoints: builder => ({
+    getWeather: builder.query({
+      query: (city) => `/weather/${city}`,
+      providesTags: ['Weather']
+    })
+  })
+})
+
+export const { useGetWeatherQuery } = apiSlice;

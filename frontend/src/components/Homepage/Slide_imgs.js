@@ -1,2 +1,3 @@
 const slide0 = require('../../static/phone.png');
-export default [slide0];
+const slide1 = require('../../static/globus.png');
+export default [slide0, slide1];
